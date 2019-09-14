@@ -1,7 +1,11 @@
 import React from "react";
 
+import Header from "./components/Header/Header";
+
+import "./App.css";
+
 function App() {
-  return <h1>Glória a Deus!</h1>;
+  return <Header />;
 }
 
 export default App;
