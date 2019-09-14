@@ -9,9 +9,11 @@ html,
 body,
 #app {
   font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
   min-height: 100%;
 }
 
 body {
+  background: #f2f2f2;
   -webkit-font-smoothing: antialiased !important;
 }
