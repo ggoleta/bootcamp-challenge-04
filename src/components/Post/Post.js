@@ -5,7 +5,6 @@ import "./Post.css";
 import Comment from "../Comment/Comment";
 
 function Post({ post }) {
-  console.log(post);
   return (
     <div className="panel">
       <div className="info-user">
@@ -15,10 +14,8 @@ function Post({ post }) {
           <li className="post-date">{post.date}</li>
         </ul>
       </div>
-
       <p className="post">{post.content}</p>
-
-      <Comment />
+      <Comment comments={post.comments} />
     </div>
   );
 }

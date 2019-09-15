@@ -1,7 +1,20 @@
 import React from "react";
 
-function Comment() {
-  return <h1>Glória a Deus!</h1>;
+import "./Comment.css";
+
+function Comment({ comments }) {
+  return (
+    <>
+      {comments.map(c => (
+        <div className="content-comment" key={c.id}>
+          <img src={c.author.avatar} alt="User Avatar" />
+          <p className="comment">
+            {c.author.name} {c.content}
+          </p>
+        </div>
+      ))}
+    </>
+  );
 }
 
 export default Comment;

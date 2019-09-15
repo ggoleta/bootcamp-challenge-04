@@ -1,0 +1,20 @@
+.content-comment {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content-comment + .content-comment {
+  margin-top: 10px;
+}
+
+.content-comment img {
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.comment {
+  background: #eeeeee;
+  padding: 15px;
+  border-radius: 20px;
+}
